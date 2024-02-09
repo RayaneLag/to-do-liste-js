@@ -1,0 +1,42 @@
+.pic {
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://lh3.googleusercontent.com/proxy/raYDkXVt0VeLXmS9AJC46ZLgiswk6D4fX4zJTtNxKUNle69MRRKJGIs85V6hkNSd1ggTxapt0v1S--Ex0J5QNKhMK_b8MPeW4MktBFTS__6Sh1nhvWONh_2GkAI-bA);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  height: 50%;
+  width: 50%;
+  font-family: "Death Note Font", sans-serif;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  /* animation-name: fadeOut;
+  animation-duration: 1s;
+  opacity: 0; */
+}
+
+/* @keyframes fadeOut {
+  50% {
+    opacity: 0;
+  }
+} */
+
+.container button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 120px;
+  border: none;
+  background-color: #060606;
+  background-image: linear-gradient(0deg, #060606 70%, #ffffff 100%);
+  color: #ffffff;
+}
