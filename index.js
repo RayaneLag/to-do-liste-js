@@ -41,3 +41,31 @@ function appearPic() {
     page2.style.display = "none";
   }, 1500);
 }
+
+const Pic = document.querySelector(".MyImg");
+const sugg = document.querySelector(".sugg");
+const container = document.querySelector(".section");
+const Bar = document.querySelector(".search");
+const X = document.querySelector(".delete");
+const mort = document.querySelector(".X");
+const mybtn = document.querySelector(".mybtn");
+
+Bar.addEventListener("click", handleClick);
+function handleClick() {
+  sugg.classList.toggle("active");
+}
+
+sugg.addEventListener("click", Onclick);
+function Onclick() {
+  container.classList.toggle("active");
+}
+
+X.addEventListener("click", click);
+function click() {
+  container.classList.toggle("active");
+}
+
+mybtn.addEventListener("click", clicki);
+function clicki() {
+  mort.classList.toggle("active");
+}
