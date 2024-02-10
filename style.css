@@ -1,13 +1,18 @@
+body {
+  position: relative;
+}
+
 .pic {
   height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(https://lh3.googleusercontent.com/proxy/raYDkXVt0VeLXmS9AJC46ZLgiswk6D4fX4zJTtNxKUNle69MRRKJGIs85V6hkNSd1ggTxapt0v1S--Ex0J5QNKhMK_b8MPeW4MktBFTS__6Sh1nhvWONh_2GkAI-bA);
+  background-image: url(https://lh3.googleusercontent.com/proxy/aZzwb5LzKX21vdD1aPILZXax3BzqxPkIOibvOc7r0i2hGPAhq6RLqZfCP1mXTyITWFwwTaoxp0DIA9Rp54jpt0WAMJ2I2kdznwHXsezP9U2kvLFRHllsXtdWSrZ5RQ);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
 }
 
 .container {
@@ -19,24 +24,52 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  z-index: 1;
+}
+
+.container h1 {
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 0),
+    0 0 0.2em rgb(255, 255, 255);
+}
+
+.alpha {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+/* part alpha  */
+
+.alpha {
+  background-image: url(death-note.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
-  /* animation-name: fadeOut;
-  animation-duration: 1s;
-  opacity: 0; */
+  font-family: "Death Note Font", sans-serif;
 }
 
-/* @keyframes fadeOut {
-  50% {
-    opacity: 0;
-  }
-} */
+.nav img {
+  position: absolute;
+  right: 170px;
+}
 
-.container button {
+#search {
+  width: 50vw;
+  height: 22px;
   padding: 10px;
-  border-radius: 5px;
-  width: 120px;
+  box-shadow: 5px 5px 18px 1px #000000;
   border: none;
-  background-color: #060606;
-  background-image: linear-gradient(0deg, #060606 70%, #ffffff 100%);
-  color: #ffffff;
+  border-radius: 5px;
+  font-family: "Death Note Font", sans-serif;
 }
+
+
+
